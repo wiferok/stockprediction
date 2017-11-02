@@ -21,6 +21,8 @@ style.use("ggplot")
 
 #for general purposes of printing...
 stock = "AMZN"
+#quandl api key to raise call limit
+ql.ApiConfig.api_key = "HJGyWJ5ggPDRosSCeDZ2"
 
 df1 = ql.get('WIKI/AMZN', start_date="2000-12-31", end_date="2005-12-31")
 df1 = df1[["Adj. Open", "Adj. Close", "Adj. High", "Adj. Low", "Adj. Volume"]]
